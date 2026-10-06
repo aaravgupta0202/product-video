@@ -1,0 +1,14 @@
+# rendered video, recordings and still frames
+output/
+
+# node / python
+node_modules/
+__pycache__/
+*.pyc
+
+# OS and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

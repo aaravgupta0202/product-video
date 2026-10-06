@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CanopyAI Launch Film</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-bug" viewBox="0 0 24 24"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3 3 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M16 2v20"/></symbol>
+    <symbol id="i-comp" viewBox="0 0 24 24"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol>
+    <symbol id="i-hist" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+  </defs>
+</svg>
+
+<div id="stage">
+  <canvas id="gl"></canvas>
+  <div id="vignette"></div>
+  <div id="scrim"></div>
+
+  <!-- 01 HOOK -->
+  <section class="scene" id="s-hook">
+    <div class="center">
+      <div class="tag" id="hookTag">// 2:14 AM &middot; <b>src/auth/session.ts</b></div>
+      <h1 class="split">You've fixed this bug before.</h1>
+      <div class="l2 split">You just can't remember how.</div>
+    </div>
+  </section>
+
+  <!-- 02 PROBLEM -->
+  <section class="scene" id="s-problem">
+    <div class="copy">
+      <div class="kicker">The problem</div>
+      <h2 class="split">Engineering<br>knowledge<br><span class="neon" id="gone">disappears.</span></h2>
+      <p class="sub">The reasons behind your code end up in old chats, closed tabs and docs nobody reads.</p>
+    </div>
+    <div class="p3d frag-wrap">
+      <div class="frag" style="left:20px;top:170px"><span class="badge b-note">Dev note &middot; Architecture</span><div class="t">Why we moved to short-lived JWTs</div><div class="m">written down: never</div></div>
+      <div class="frag" style="left:330px;top:330px"><span class="badge b-issue">Issue &middot; Solved</span><div class="t">Token refresh race condition</div><div class="m">fix: in some PR from March</div></div>
+      <div class="frag" style="left:60px;top:500px"><span class="badge b-comp">Component</span><div class="t"><code>useDebouncedSearch()</code></div><div class="m">rewritten in 3 projects</div></div>
+      <div class="frag" style="left:350px;top:680px"><span class="badge b-note">TODO</span><div class="t">Retry logic for the sync job</div><div class="m">buried in a chat thread</div></div>
+    </div>
+  </section>
+
+  <!-- 03 LOGO -->
+  <section class="scene" id="s-logo">
+    <div class="center">
+      <div class="kicker c" id="introK">Introducing</div>
+      <div class="wm split" id="wm1">Canopy<span class="neon">AI</span></div>
+      <div class="tagline">It remembers what you built, and why.</div>
+    </div>
+  </section>
+
+  <!-- 04 SURFACES -->
+  <section class="scene" id="s-surfaces">
+    <div class="copy">
+      <div class="kicker">How it works</div>
+      <h2 class="split">It lives <span class="neon">where you work.</span></h2>
+    </div>
+    <div class="pin" id="pinExt"><div class="pin-in"><div class="pk">VS Code extension</div><div class="pt">Save as you code</div></div></div>
+    <div class="pin" id="pinCore"><div class="pin-in"><div class="pk">Cognee memory graph</div><div class="pt">Links it all together</div></div></div>
+    <div class="pin" id="pinDash"><div class="pin-in"><div class="pk">Dashboard</div><div class="pt">Browse and search</div></div></div>
+    <div class="pipe" id="pipe"><span>You save it</span><i></i><span>Stored in Postgres</span><i></i><span>Linked in Cognee</span><i></i><span>Synced live</span><i></i><span>Ready for AI</span></div>
+  </section>
+
+  <!-- 05 CAPTURE -->
+  <section class="scene" id="s-capture">
+    <div class="copy">
+      <div class="kicker">01 &middot; Capture</div>
+      <h2 class="split">Save what you learn <span class="neon">while you code.</span></h2>
+      <p class="sub">Select some code and save it as an issue, a note or a component. AI writes the summary and tags.</p>
+      <div class="chips">
+        <div class="chip" style="color:var(--issue)"><svg class="ico"><use href="#i-bug"/></svg><span style="color:var(--ink)">Issues</span></div>
+        <div class="chip" style="color:var(--note)"><svg class="ico"><use href="#i-note"/></svg><span style="color:var(--ink)">Dev Notes</span></div>
+        <div class="chip" style="color:var(--note)"><svg class="ico"><use href="#i-flag"/></svg><span style="color:var(--ink)">Checkpoints</span></div>
+        <div class="chip" style="color:var(--comp)"><svg class="ico"><use href="#i-comp"/></svg><span style="color:var(--ink)">Components</span></div>
+      </div>
+    </div>
+    <div class="p3d cap-wrap">
+      <div class="shot" id="cap3" style="width:600px;left:330px;top:250px"><img src="assets/shots/ext-component.png"></div>
+      <div class="shot" id="cap2" style="width:640px;left:200px;top:180px"><img src="assets/shots/ext-issue.png"></div>
+      <div class="shot" id="cap1" style="width:440px;left:20px;top:150px"><img src="assets/shots/ext-actions1.png"></div>
+    </div>
+  </section>
+
+  <!-- 06 AMBIENT -->
+  <section class="scene" id="s-ambient">
+    <div class="copy">
+      <div class="kicker">02 &middot; Ambient context</div>
+      <h2 class="split">It remembers, <span class="neon">so you don't.</span></h2>
+      <p class="sub">Open a file and Canopy shows the issues, notes and components related to it. If a line looks like a bug you already fixed, it shows you <b>how you fixed it</b>.</p>
+    </div>
+    <div class="p3d amb-wrap">
+      <div class="card ctx" id="ctxCard" style="left:520px;top:600px">
+        <div class="hd"><span>Context &middot; session.ts</span></div>
+        <div class="health"><b id="healthN">0%</b><span>memory health</span></div>
+        <div class="it"><span class="badge b-issue">Issue &middot; solved</span><div>Token refresh race</div></div>
+        <div class="it"><span class="badge b-note">Dev note</span><div>Why short-lived JWTs</div></div>
+      </div>
+      <div class="editor" id="editor" style="left:0;top:190px">
+        <div class="ed-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="tab on">session.ts</span><span class="tab">client.ts</span></div>
+        <div class="ed-body">
+          <div class="ln"><span class="n">1</span><span><span class="k">import</span> { <span class="p">api</span> } <span class="k">from</span> <span class="s">'./client'</span></span></div>
+          <div class="ln"><span class="n">2</span><span></span></div>
+          <div class="ln"><span class="n">3</span><span><span class="k">export async function</span> <span class="f">refresh</span>(): <span class="ty">Promise</span>&lt;<span class="ty">Token</span>&gt; {</span></div>
+          <div class="ln hl" id="hlLine"><span class="n">4</span><span>&nbsp;&nbsp;<span class="k">const</span> res = <span class="k">await</span> <span class="p">api</span>.<span class="f">post</span>(<span class="s">'/auth/refresh'</span>)</span></div>
+          <div class="ln"><span class="n">5</span><span>&nbsp;&nbsp;<span class="p">store</span>.<span class="f">setToken</span>(res.token)</span></div>
+          <div class="ln"><span class="n">6</span><span>&nbsp;&nbsp;<span class="k">return</span> res.token</span></div>
+          <div class="ln"><span class="n">7</span><span>}</span></div>
+          <div class="ln"><span class="n">8</span><span></span></div>
+          <div class="ln"><span class="n">9</span><span><span class="c">// called from every 401 handler</span></span></div>
+          <div class="ln"><span class="n">10</span><span><span class="k">export function</span> <span class="f">onExpired</span>(cb: () =&gt; <span class="ty">void</span>) {</span></div>
+          <div class="ln"><span class="n">11</span><span>&nbsp;&nbsp;<span class="p">window</span>.<span class="f">addEventListener</span>(<span class="s">'token:expired'</span>, cb)</span></div>
+          <div class="ln"><span class="n">12</span><span>}</span></div>
+        </div>
+        <div class="hint" id="hint" style="top:248px;left:330px">
+          <div class="h"><svg class="ico"><use href="#i-hist"/></svg>Solved before &middot; Token refresh race</div>
+          <div class="b">Two requests tried to refresh the token at the same time. Fixed by making them share one <span class="mono" style="color:var(--ink)">refresh()</span>.</div>
+          <div class="f2">SEE THE FIX &rarr;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 CHAT -->
+  <section class="scene" id="s-chat">
+    <div class="copy">
+      <div class="kicker">03 &middot; AI chat</div>
+      <h2 class="split">Ask your project <span class="neon">anything.</span></h2>
+      <p class="sub">Answers come from your own history and show where each fact came from. You can search all your projects at once.</p>
+    </div>
+    <div class="p3d chat-wrap">
+      <div class="card chat" id="chatCard" style="left:0;top:170px">
+        <div class="hd"><img src="assets/logo.png" alt="">CanopyAI Chat<span class="badge b-neon">canopy</span></div>
+        <div class="bubble me" id="q">Why did we switch to short-lived JWTs?</div>
+        <div class="bubble ai"><span id="ans">You switched to 15-minute tokens after a token leaked in staging. The bug where two refreshes ran at once was fixed in Issue #42.</span>
+          <div class="cites" id="cites">
+            <div class="cite" style="color:var(--note)"><svg class="ico"><use href="#i-note"/></svg><span style="color:var(--ink)">Dev note &middot; Auth decisions</span></div>
+            <div class="cite" style="color:var(--issue)"><svg class="ico"><use href="#i-bug"/></svg><span style="color:var(--ink)">Issue #42 &middot; Token refresh race</span></div>
+          </div>
+        </div>
+        <div class="toggle"><div class="sw" id="sw"><i></i></div><svg class="ico"><use href="#i-globe"/></svg>Search across all my projects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 EDIT + PRE-MORTEM -->
+  <section class="scene" id="s-edit">
+    <div class="copy">
+      <div class="kicker">04 &middot; Edit with AI &middot; Pre-Mortem</div>
+      <h2 class="split">Change code <span class="neon">without guessing.</span></h2>
+      <p class="sub">Say what you want changed. You review every file before anything is saved. Pre-Mortem warns you if this code has broken before.</p>
+    </div>
+    <div class="p3d edit-wrap">
+      <div class="card diffc" id="diffCard" style="left:0;top:120px">
+        <div class="hd"><svg class="ico"><use href="#i-wand"/></svg>Edit with AI</div>
+        <div class="prompt" id="prompt">Make parallel requests share one token refresh</div>
+        <div class="file" id="file1">
+          <div class="fh"><span class="ck"><svg class="ico" style="font-size:14px;stroke-width:3"><use href="#i-check"/></svg></span>src/auth/session.ts<span class="st"><span style="color:var(--neon)">+4</span> <span style="color:#f87171">&minus;2</span></span></div>
+          <div class="dl del">-  const res = await api.post('/auth/refresh')</div>
+          <div class="dl add">+  if (pending) return pending</div>
+          <div class="dl add">+  pending = api.post('/auth/refresh')</div>
+          <div class="dl add">+    .finally(() =&gt; { pending = null })</div>
+        </div>
+        <div class="file" id="file2"><div class="fh"><span class="ck"><svg class="ico" style="font-size:14px;stroke-width:3"><use href="#i-check"/></svg></span>src/api/client.ts<span class="st"><span style="color:var(--neon)">+1</span> <span style="color:#f87171">&minus;1</span></span></div></div>
+        <div class="btns"><span class="btn pri" id="applyBtn">Apply 2 files</span><span class="btn">Review diff</span></div>
+      </div>
+      <div class="card pm" id="pmCard" style="left:400px;top:640px">
+        <div class="hd"><svg class="ico"><use href="#i-shield"/></svg>Pre-Mortem</div>
+        <div class="m">CHECKED AGAINST PAST BUGS AND NOTES</div>
+        <div class="r">refresh() broke before when two calls ran at once (Issue #17).</div>
+        <div class="ok"><svg class="ico"><use href="#i-check"/></svg>This change handles that case.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 GRAPH -->
+  <section class="scene" id="s-graph">
+    <div class="copy">
+      <div class="kicker">05 &middot; Memory graph</div>
+      <h2 class="split">Everything you know, <span class="neon">connected.</span></h2>
+    </div>
+    <div class="legend chips" id="legend">
+      <div class="chip" style="color:var(--neon)"><span class="d"></span><span style="color:var(--ink)">Repository</span></div>
+      <div class="chip" style="color:var(--note)"><span class="d"></span><span style="color:var(--ink)">Dev Notes</span></div>
+      <div class="chip" style="color:var(--issue)"><span class="d"></span><span style="color:var(--ink)">Issues</span></div>
+      <div class="chip" style="color:var(--comp)"><span class="d"></span><span style="color:var(--ink)">Components</span></div>
+    </div>
+  </section>
+
+  <!-- 10 DASHBOARD -->
+  <section class="scene" id="s-dash">
+    <div class="p3d ring-wrap">
+      <div class="ring" id="ring">
+        <div class="shot"><img src="assets/shots/dash-overview.png"></div>
+        <div class="shot"><img src="assets/shots/dash-issues.png"></div>
+        <div class="shot"><img src="assets/shots/dash-timeline.png"></div>
+        <div class="shot"><img src="assets/shots/dash-components.png"></div>
+        <div class="shot"><img src="assets/shots/dash-chat.png"></div>
+        <div class="shot"><img src="assets/shots/dash-memory.png"></div>
+        <div class="shot"><img src="assets/shots/dash-repo.png"></div>
+        <div class="shot"><img src="assets/shots/dash-projects.png"></div>
+      </div>
+    </div>
+    <div class="lgrad"></div>
+    <div class="copy">
+      <div class="kicker">06 &middot; Dashboard</div>
+      <h2 class="split">See it all <span class="neon">in one place.</span></h2>
+      <p class="sub">Projects, issues, timeline, components and chat. It updates live while you work in VS Code.</p>
+    </div>
+  </section>
+
+  <!-- 11 IT ADDS UP -->
+  <section class="scene" id="s-compound">
+    <div class="copy">
+      <div class="kicker">07 &middot; It adds up</div>
+      <h2 class="split">Every fix makes <span class="neon">the next one easier.</span></h2>
+      <p class="sub">Each issue, note and decision you save is there the next time you need it. Your project gets easier to work on, not harder.</p>
+    </div>
+  </section>
+
+  <!-- 12 STACK -->
+  <section class="scene" id="s-stack">
+    <div class="copy">
+      <div class="kicker">Under the hood</div>
+      <h2 class="split">How it&rsquo;s <span class="neon">built.</span></h2>
+      <p class="sub">Your data is stored in PostgreSQL and linked together by Cognee. The extension and dashboard always stay in sync.</p>
+    </div>
+    <div class="pin" data-slab="0"><div class="pin-in sl"><div class="pk">What you use</div><div class="pt">VS Code extension &middot; Dashboard</div></div></div>
+    <div class="pin" data-slab="1"><div class="pin-in sl"><div class="pk">Backend</div><div class="pt">FastAPI &middot; live sync</div></div></div>
+    <div class="pin" data-slab="2"><div class="pin-in sl"><div class="pk">Storage</div><div class="pt">Neon PostgreSQL</div></div></div>
+    <div class="pin" data-slab="3"><div class="pin-in sl"><div class="pk">Memory</div><div class="pt">Cognee knowledge graph</div></div></div>
+    <div class="pin" data-slab="4"><div class="pin-in sl"><div class="pk">AI models</div><div class="pt">Groq &rarr; Cerebras &rarr; Gemini</div></div></div>
+  </section>
+
+  <!-- 13 VISION -->
+  <section class="scene" id="s-vision">
+    <div class="center">
+      <div class="kicker c">Our one rule</div>
+      <h2 class="split">Will this help you <span class="neon">six months from now?</span></h2>
+      <p class="sub" id="visionSub">If the answer is yes, it goes into Canopy.</p>
+    </div>
+  </section>
+
+  <!-- 14 CTA -->
+  <section class="scene" id="s-cta">
+    <div class="center">
+      <div class="wm split" id="wm2">Canopy<span class="neon">AI</span></div>
+      <div class="tagline">Never lose what you&rsquo;ve learned.</div>
+      <div class="by">Built by Aarav Gupta</div>
+    </div>
+  </section>
+  <div id="grain"></div>
+  <div id="fade"></div>
+</div>
+
+<div id="start">
+  <img src="assets/logo.png" alt="">
+  <div class="t">CanopyAI Launch Film</div>
+  <div class="s">Click to start. The page goes fullscreen, records itself, plays the film once (about 100&nbsp;seconds), and saves the video when it ends. When Chrome asks which tab to share, choose <b>this tab</b> and keep <b>Also share tab audio</b> on.</div>
+  <div class="go">Start recording</div>
+</div>
+<div id="msg"></div>
+
+<script src="lib/three.min.js"></script>
+<script src="lib/gsap.min.js"></script>
+<script src="lib/logo-shape.js"></script>
+<script src="lib/logo-points.js"></script>
+<script src="lib/sound-meta.js"></script>
+<script src="lib/sound.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

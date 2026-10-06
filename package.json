@@ -1,0 +1,14 @@
+{
+  "name": "canopy-launch-film",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CanopyAI product launch film: a self-playing 3D HTML film that records itself to MP4.",
+  "scripts": {
+    "start": "node run.js",
+    "render": "node run.js --headless",
+    "test-run": "node run.js --end 8",
+    "snap": "node tools/snap.js",
+    "mix": "node tools/mix.js output/canopy-launch.mp4",
+    "analyze-audio": "python tools/analyze_audio.py"
+  }
+}
