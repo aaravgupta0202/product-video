@@ -35,26 +35,6 @@ h2{font-size:96px}
 .w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .02em .1em;margin-bottom:-.1em}
 .wi{display:inline-block;will-change:transform}
 
-/* ---------- HUD (after the AXION deck) ---------- */
-#hud{position:absolute;inset:0;pointer-events:none;font-family:var(--mono);font-size:14px;letter-spacing:.22em;color:var(--mute);text-transform:uppercase;opacity:0}
-#hud .cn{position:absolute;width:26px;height:26px;border-color:rgba(233,241,235,.35);border-style:solid;border-width:0}
-#hud .tl{left:44px;top:44px;border-left-width:1.5px;border-top-width:1.5px}
-#hud .tr{right:44px;top:44px;border-right-width:1.5px;border-top-width:1.5px}
-#hud .bl{left:44px;bottom:44px;border-left-width:1.5px;border-bottom-width:1.5px}
-#hud .br{right:44px;bottom:44px;border-right-width:1.5px;border-bottom-width:1.5px}
-#hud .row{position:absolute;display:flex;align-items:center;gap:22px}
-#hud .top-l{left:86px;top:52px}
-#hud .top-r{right:86px;top:52px}
-#hud .bot-l{left:86px;bottom:52px}
-#hud .bot-r{right:86px;bottom:52px}
-#hud .brand{color:var(--ink);display:flex;align-items:center;gap:12px;font-weight:700}
-#hud .brand img{width:22px;height:22px}
-#hud .sq{width:7px;height:7px;background:var(--neon);box-shadow:0 0 10px var(--neon)}
-#hud .num{color:var(--ink)}
-#hud .bar{width:150px;height:1.5px;background:rgba(233,241,235,.15);position:relative;overflow:hidden}
-#hud .bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--neon);box-shadow:0 0 8px var(--neon)}
-#hud .name{color:var(--dim)}
-
 /* ---------- generic UI pieces ---------- */
 .p3d{position:absolute;perspective:1900px;transform-style:preserve-3d}
 .p3d>*{position:absolute;transform-style:preserve-3d}

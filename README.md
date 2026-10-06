@@ -1,12 +1,15 @@
-# CanopyAI — Launch Film
+# CanopyAI Launch Film
 
 A 100-second, self-playing 3D launch film for CanopyAI, built for LinkedIn (1920×1080, 60 fps, H.264, with sound).
-It's one continuous three.js camera journey with a GSAP overlay, styled after the AXION BPP deck:
-bold type and mono labels, with no on-screen chrome. It uses Canopy's own colours (`#00ffa3` on `#030705`),
+It's one continuous three.js camera journey with a GSAP overlay, with bold type, mono labels
+and no on-screen chrome. It uses Canopy's own colours (`#00ffa3` on `#030705`),
 the logo extruded into 3D, and the product's fonts (Space Grotesk, Inter, JetBrains Mono).
 
 ## Prompt
 
+The single prompt that recreates this project. Replace the parts in `<angle brackets>`.
+
+```text
 Make a launch video for my product, <PRODUCT NAME>. I'll post it on LinkedIn.
 
 INPUTS
@@ -61,7 +64,7 @@ QUALITY CHECKS (do these before telling me it's done)
 - Clean up: delete test images and unused files, keep only assets the film uses,
   add a .gitignore (ignore the rendered video) and a README explaining how to run and
   edit it. Don't run any git commands.
-
+```
 
 ## Make the video
 
@@ -163,5 +166,3 @@ See `assets/audio/CREDITS.md` for the full list.
   `--headless` mode is the fallback.
 - **Wrong size**: the recording follows your screen size, and the export scales it to
   1920×1080. On a screen smaller than 1080p, use `--headless`, which always renders at 1920×1080.
-#   p r o d u c t - v i d e o  
- 
